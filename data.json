@@ -1,0 +1,7 @@
+{
+    "grid_dimension" : 100,
+    "tolerance" : 1e-12,
+    "max_iterations" : 20000,
+    "force_function" : "8 * pi * pi * sin(2 * pi * x) * sin(2 * pi * y)",
+    "exact_solution" : "sin(2 * pi * x) * sin(2 * pi * y)"
+}
