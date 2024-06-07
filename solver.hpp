@@ -2,12 +2,15 @@
 #define SOLVER_HPP
 
 #include <vector> // Standard vector library
+#include <string> // Standard string library
 #include <functional> // Function objects library
 
 class Solver {
 public:
     Solver(int n, double tol, int max_iter, std::function<double(double, double)> force, std::function<double(double, double)> exact);
     // Constructor to initialize Solver object with problem parameters and functions
+    void export_sol(const std::vector<double>& data, const std::string filename); // Method to export data to a file
+    void exchange_boundary(std::vector<double>& U, int local_n, int rank, int size);
     void parallel_solver(); // Method to solve the problem using parallel computation
     void sequential_solver(); // Method to solve the problem sequentially
     double calculate_L2_norm(const std::vector<double>& data); // Method to calculate the L2 norm of a vector
