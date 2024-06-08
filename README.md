@@ -1,4 +1,4 @@
-# MPI Solver for Laplace Equation
+# pacs-challenge-3
 
 ## Description
 
