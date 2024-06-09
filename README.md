@@ -52,6 +52,8 @@ The program saves the numerical solution in VTK files within the `output` direct
 
 The input parameters are provided via a JSON file (`data.json`). The following parameters are supported:
 
-
-
-
+- **grid_dimension**: Specifies the grid dimension for solving the equation.
+- **tolerance**: Specifies the tolerance for convergence of the iterative method.
+- **max_iterations**: Specifies the maximum number of iterations allowed.
+- **force_function**: Specifies the force function in the differential equation.
+- **exact_solution**: Specifies the exact solution of the differential equation.
