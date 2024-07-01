@@ -1,5 +1,5 @@
 #Insert the path to the folder with muparser and json libraries
-PACS_ROOT = ../../pacs-examples/Examples
+PACS_ROOT ?= ../../pacs-examples/Examples
 
 CXX       = mpic++
 CXXFLAGS ?= -std=c++20
