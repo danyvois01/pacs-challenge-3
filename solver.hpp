@@ -5,6 +5,7 @@
 #include <string> // Standard string library
 #include <functional> // Function objects library
 
+//@note use doxygen for comemnting classes and functions. It is more standard in C++ community
 class Solver {
 public:
     Solver(int n, double tol, int max_iter, std::function<double(double, double)> force, std::function<double(double, double)> exact);

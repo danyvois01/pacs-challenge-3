@@ -105,7 +105,7 @@ void Solver::parallel_solver() {
 
     for (int i = 1; i < local_n - 1; ++i) { // Iterate over local grid points
         for (int j = 1; j < n - 1; ++j) { // Iterate over columns
-            local_force[i * n + j] = h * h * force((i + rank * (local_n - 2)) * h, j * h); // Compute the force at each grid point
+            local_force[i * n + j] = h * h * force((i + rank * (local_n - 2)) * h, j * h); // Compute the force at each grid point @note good precumpute for efficiency
         }
     }
 
